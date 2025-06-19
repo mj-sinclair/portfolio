@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>Joel Edward Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Screenshot_2025-06-09_164521-removebg-preview (1).png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>All Rounded</p>
+            <h1> Hello, I'm <span> Joel Edward</span> from Kenya</h1>
+        </div>
+    </div>
+</div>
+<!-- ------about----- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/yyy.jpg">
+          </div>
+          <div class="about-col-2">
+            <h1> About Me</h1>
+            <p>Dynamic all rounded personality. Proven knowledge in international relations as well as computer programing. Proven aptitude in diplomatic strategy, cross-cultural communication, and policy analysis. Proficiency in utilizing data analytics and research methodologies to contribute insights into global issues. Curious and interested in grasping the new age wave that is ever changing keeping me on my toes.</p>
+            
+            <div class="tab-titles">
+               <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+               <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+               <p class="tab-links" onclick="opentab('Education')">Education</p> 
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Graphic Design</span><br>Designing visuals for marketing campaings</li>
+                    <li><span>Data Entry and Analysis</span><br>Indepth analysis of data </li>
+                    <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                </ul>
+            </div>
+            <div class="tab-contents active-tab" id="Experience">
+                <ul>
+                    <li><span>Graphic Design</span><br>Designing visuals for marketing campaings</li>
+                    <li><span>Data Entry and Analysis</span><br>Indepth analysis of data </li>
+                    <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                </ul>
+            </div>
+            <div class="tab-contents active-tab" id="Education">
+                <ul>
+                    <li><span>Graphic Design</span><br>Designing visuals for marketing campaings</li>
+                    <li><span>Data Entry and Analysis</span><br>Indepth analysis of data </li>
+                    <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                </ul>
+            </div>
+           </div> 
+        </div>
+    </div>
+</div>
+<!-------services----->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2> Web design</h2>
+                <p> nionooooooooooooooooooooooooooooooooooooooooooooo</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2> Data Entry & Analysis</h2>
+                <p> nionooooooooooooooooooooooooooooooooooooooooooooo</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2> Graphic Design</h2>
+                <p> nionooooooooooooooooooooooooooooooooooooooooooooo</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------portfolio------ -->
+ <div id="Portfolio">
+     <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/gggggg.webp">
+                <div class="layer">
+                    <h3> Graphic Design</h3>
+                    <p> Visual presentation to market your products, events or institutions. Feel free to contact.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/iiii.webp">
+                <div class="layer">
+                    <h3> Graphic Design</h3>
+                    <p> Visual presentation to market your products, events or institutions. Feel free to contact.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="work">
+                <img src="images/4444.jpg">
+                <div class="layer">
+                    <h3> Graphic Design</h3>
+                    <p> Visual presentation to market your products, events or institutions. Feel free to contact.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+     </div>
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
